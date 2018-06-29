@@ -22,6 +22,35 @@ app.use(
   })
 );
 
+const cheeses = [
+  'Bath Blue',
+  'Barkham Blue',
+  'Buxton Blue',
+  'Cheshire Blue',
+  'Devon Blue',
+  'Dorset Blue Vinney',
+  'Dovedale',
+  'Exmoor Blue',
+  'Harbourne Blue',
+  'Lanark Blue',
+  'Lymeswold',
+  'Oxford Blue',
+  'Shropshire Blue',
+  'Stichelton',
+  'Stilton',
+  'Blue Wensleydale',
+  'Yorkshire Blue'  
+];
+
+app.get('/api/cheeses', (req, res, next) => {
+  res.json(cheeses);
+});
+//   .then(() => {
+
+//   })
+//   .catch(err => next(err))
+// }
+
 function runServer(port = PORT) {
   const server = app
     .listen(port, () => {
