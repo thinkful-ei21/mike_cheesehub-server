@@ -3,7 +3,6 @@
 module.exports = {
   PORT: process.env.PORT || 8080,
   CLIENT_ORIGIN: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
-  API_BASE_URL: 'https://mike-cheesehub.herokuapp.com/',
   DATABASE_URL:
         process.env.DATABASE_URL || 'mongodb://localhost/thinkful-backend',
   TEST_DATABASE_URL:
